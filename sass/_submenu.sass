@@ -1,7 +1,13 @@
 .submenu
     ul 
         list-style: none
+        css-reset: css-counter 0
     li
         padding: 25px 35px
         background-color: $bg__sup
         border-radius: 20px
+        counter-increment: css-counter 1
+        &::before
+            content: "/0" counter(css-counter) 
+            margin-right: 20px
+            font-weight: 700

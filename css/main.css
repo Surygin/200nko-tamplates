@@ -3,6 +3,7 @@ body {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   background-color: rgba(0, 11, 63, 0.1);
+  color: #303749;
 }
 body img {
   width: 100%;
@@ -69,10 +70,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 .main__form {
   position: sticky;
+  max-width: 300px;
   top: 20px;
   padding: 25px 35px;
   border: 2px solid #ffffff;
   border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.15);
 }
 .main__form-title {
   margin-bottom: 15px;
@@ -119,9 +122,70 @@ h1, h2, h3, h4, h5, h6 {
 
 .submenu ul {
   list-style: none;
+  css-reset: css-counter 0;
 }
 .submenu li {
   padding: 25px 35px;
   background-color: #EEEFF3;
   border-radius: 20px;
+  counter-increment: css-counter 1;
+}
+.submenu li::before {
+  content: "/0" counter(css-counter);
+  margin-right: 20px;
+  font-weight: 700;
+}
+
+.about {
+  padding: 95px 0;
+  background: #EEEFF3 url(../img/about/about.jpg) center no-repeat;
+  border-top: 2px solid rgba(242, 169, 0, 0.75);
+  border-bottom: 2px solid rgba(242, 169, 0, 0.75);
+}
+.about__title {
+  margin-bottom: 45px;
+  font-size: 48px;
+}
+
+.notbg__body {
+  padding: 40px;
+  background-color: #EEEFF3;
+  border-radius: 20px;
+}
+.notbg__title {
+  margin-bottom: 30px;
+}
+.notbg__subtitle {
+  font-size: 18px;
+  font-weight: 500;
+}
+.notbg img {
+  margin-bottom: 30px;
+  border-radius: 20px;
+}
+.notbg ul {
+  margin: 20px 0;
+  padding-left: 40px;
+}
+
+.whitebg__body {
+  position: relative;
+  padding: 40px;
+  border-radius: 20px;
+  width: 100wv;
+  background-color: #ffffff;
+  z-index: 1;
+}
+.whitebg__body::before {
+  position: absolute;
+  top: 0;
+  margin-left: calc(20px - 100vw);
+  padding: 40px;
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100vw;
+  border-radius: 20px;
+  background-color: #fff;
+  z-index: -1;
 }/*# sourceMappingURL=main.css.map */
