@@ -1,0 +1,12 @@
+{
+    "version": 3,
+    "mappings": "ACIA,AAAA,IAAI,CAAC;EACH,SAAS,EAAE,IAAI;CAAG;;AAEpB,AAAA,kBAAkB,CAAC;EACjB,OAAO,EAAE,IAAI;EACb,QAAQ,EAAE,QAAQ;EAClB,MAAM,EAAE,GAAG;EACX,KAAK,EAAE,GAAG;EACV,QAAQ,EAAE,MAAM;EAChB,IAAI,EAAE,aAAa;CAAG;;ACbxB,AAAA,OAAO,CAAC;EACN,KAAK,EDCS,OAAO;CCDG;;ACD1B,AAAA,OAAO,CAAC;EACN,KAAK,EFAY,MAAM;CEAI",
+    "sources": [
+        "../sass/main.sass",
+        "../sass/_settings.sass",
+        "../sass/_header.sass",
+        "../sass/_footer.sass"
+    ],
+    "names": [],
+    "file": "main.css"
+}
