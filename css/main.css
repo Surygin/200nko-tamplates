@@ -255,4 +255,28 @@ h1, h2, h3, h4, h5, h6 {
   left: -50%;
   margin-top: -25%;
   z-index: 0;
+}
+
+.docs {
+  padding-top: 60px;
+  padding-bottom: 120px;
+  background: url(../img/docs/docs_bg.jpg) center no-repeat;
+}
+.docs__btn {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 97px;
+  width: 257px;
+  font-size: 28px;
+  font-weight: 700;
+  text-align: center;
+  background-color: #EEEFF3;
+  border-radius: 20px;
+  border: 2px solid #ffffff;
+}
+.docs .invis_el {
+  border-color: transparent;
+  background-color: transparent;
 }/*# sourceMappingURL=main.css.map */
