@@ -17,6 +17,16 @@ body
     padding: 0
   ol 
     padding: 0
+  a 
+    text-decoration: none
+  section
+    font-size: clamp(1rem, 0.955rem + 0.23vw, 1.125rem)
+    h2
+      font-size: clamp(1.25rem, 0.977rem + 1.36vw, 2rem)
+    p 
+      font-size: clamp(1rem, 0.955rem + 0.23vw, 1.125rem)
+.breadcrumbs
+  font-size: clamp(0.75rem, 0.705rem + 0.23vw, 0.875rem)
 
 .mb-section
   margin-bottom: 65px
@@ -41,3 +51,13 @@ h1, h2, h3, h4, h5, h6
   width: 1px
   overflow: hidden
   clip: rect(0 0 0 0)
+.btn
+  &__help 
+    position: fixed
+    margin-right: -100vw
+    top: 20px
+    right: 20px
+    background-color: $nko__color
+    color: $white
+    transition: all .2s ease-in-out
+    z-index: 2

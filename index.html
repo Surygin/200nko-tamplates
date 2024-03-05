@@ -16,9 +16,22 @@
   <title>Партнёрская страница</title>
 </head>
 <body>
-  <main>
+  <div class="breadcrumbs">
     <div class="container">
       <div class="row">
+        <div class="col-12">
+          <p class="my-5"><span><a class="header__color" href="#">200 лучших проектов</a></span> / <span>200 НКО, которым стоит помочь: развитие третьего сектора</span></p>
+        </div>
+        <!-- /.col-12 -->
+      </div>
+      <!-- /.row -->
+    </div>
+    <!-- /.container -->
+  </div>
+  <!-- /.breadcrumbs -->
+  <main>
+    <div class="container">
+      <div class="row d-flex flex-lg-row flex-column-reverse">
         <div class="col-12 col-lg-9">
           <div class="main mb-section">
             <div class="main__title">
@@ -38,26 +51,37 @@
         </div>
         <!-- /.col-12 col-lg-9 -->
         <div class="col-12 col-lg-3" style="position: relative;">
-          <div class="sidebar" style="position: fixed; top: 15px; z-index: 1;">
+          <div class="sidebar">
             <div class="main__logo">
-              <img src="img/logo.png" alt="Логотип организации">
+              <div class="main__logo-box">
+                <img src="img/main/logo.jpg" alt="Логотип организации">
+              </div>
+              <!-- /.main__logo-box -->
+              <img src="img/main/director.jpg" alt="Александр Горячев - Президент группы компаний Партнёр НКО">
             </div>
             <!-- /.main__logo -->
-            <div class="main__form">
-              <h2 class="text-center main__form-title header__color"><span class="d-block">Сделать</span> пожертвование</h2>
-              <input type="text" name="sum" class="main__form-input" placeholder="Сумма">
-              <button class="main__form-btn">Пожертвовать</button>
-              <a href="#" class="main__form-link">Помочь как волонтёр</a>
-              <!-- /.main__form-link -->
-              <!-- /.main__form-btn -->
-              <span class="text-center main__form-info">
-                Сфотографируй и отправь другу QR-код со ссылкой на проект
-              </span>
-              <!-- /.text-center -->
-              <div class="main__form-qr">
-                <img src="img/QR.png" alt="qr-код проекта">
-              </div>
-              <!-- /.main__form-qr -->
+            <div class="main__form" id="mainForm">
+              <form action="#" method="post">
+                <span class="main__form-close d-lg-none" id="mainFormClose">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                    <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/>
+                  </svg>
+                </span>
+                <h2 class="text-center main__form-title header__color"><span class="d-block">Сделать</span> пожертвование</h2>
+                <input type="text" name="sum" class="main__form-input" placeholder="Сумма">
+                <button class="main__form-btn">Пожертвовать</button>
+                <a href="#" class="main__form-link">Помочь как волонтёр</a>
+                <!-- /.main__form-link -->
+                <!-- /.main__form-btn -->
+                <span class="text-center main__form-info">
+                  Сфотографируй и отправь другу QR-код со ссылкой на проект
+                </span>
+                <!-- /.text-center -->
+                <div class="main__form-qr">
+                  <img src="img/QR.png" alt="qr-код проекта">
+                </div>
+                <!-- /.main__form-qr -->
+              </form>
             </div>
             <!-- /.main__form -->
           </div>
@@ -71,6 +95,10 @@
     <!-- /.container -->
   </main>
   <!-- /.main -->
+  <button class="btn btn__help" id="btnHelp">
+    Помочь
+  </button>
+  <!-- /.btn -->
   <section class="submenu">
     <div class="container">
       <div class="col-12 col-lg-9">
@@ -305,6 +333,35 @@
     <!-- /.container -->
   </section>
   <!-- /.notbg whitebg -->
+  <section class="social mb-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-9">
+          <div class="social__box d-flex justify-content-center">
+            <a href="#" class="social__img">
+              <img src="img/social/web.png" alt="Сайт компании">
+            </a>
+            <!-- /.social__img -->
+
+            <a href="#" class="social__img">
+              <img src="img/social/vk.png" alt="Сайт компании">
+            </a>
+            <!-- /.social__img -->
+
+            <a href="#" class="social__img">
+              <img src="img/social/tg.png" alt="Сайт компании">
+            </a>
+            <!-- /.social__img -->
+          </div>
+          <!-- /.social__box -->
+        </div>
+        <!-- /.col-12 col-lg-9 -->
+      </div>
+      <!-- /.row -->
+    </div>
+    <!-- /.container -->
+  </section>
+  <!-- /.social -->
   <section class="team mb-section">
     <div class="container">
       <div class="row">
@@ -314,7 +371,23 @@
           </div>
           <!-- /.team__title -->
           <div class="row">
-            <div class="col-12 col-md-6 col-lg-4">
+            <div class="col-12 col-sm-6 col-lg-4">
+              <div class="team__card">
+                <div class="team__img"><img src="img/main/director.jpg" alt="Александр Горячев"></div>
+                <!-- /.team__img -->
+                <div class="team__name">
+                  Александр Горячев
+                </div>
+                <!-- /.team__name -->
+                <div class="team__position">
+                  Президент компании "Партнёр НКО"
+                </div>
+                <!-- /.team__position -->
+              </div>
+              <!-- /.team__card -->
+            </div>
+            <!-- /.col-12 col-md-6 col-lg-4 -->
+            <div class="col-12 col-sm-6 col-lg-4">
               <div class="team__card">
                 <div class="team__img"><img src="img/team/Alexander_foto.png" alt="Александр Горячев"></div>
                 <!-- /.team__img -->
@@ -330,7 +403,7 @@
               <!-- /.team__card -->
             </div>
             <!-- /.col-12 col-md-6 col-lg-4 -->
-            <div class="col-12 col-md-6 col-lg-4">
+            <div class="col-12 col-sm-6 col-lg-4">
               <div class="team__card">
                 <div class="team__img"><img src="img/team/Alexander_foto.png" alt="Александр Горячев"></div>
                 <!-- /.team__img -->
@@ -346,23 +419,7 @@
               <!-- /.team__card -->
             </div>
             <!-- /.col-12 col-md-6 col-lg-4 -->
-            <div class="col-12 col-md-6 col-lg-4">
-              <div class="team__card">
-                <div class="team__img"><img src="img/team/Alexander_foto.png" alt="Александр Горячев"></div>
-                <!-- /.team__img -->
-                <div class="team__name">
-                  Александр Горячев
-                </div>
-                <!-- /.team__name -->
-                <div class="team__position">
-                  Президент компании "Партнёр НКО"
-                </div>
-                <!-- /.team__position -->
-              </div>
-              <!-- /.team__card -->
-            </div>
-            <!-- /.col-12 col-md-6 col-lg-4 -->
-            <div class="col-12 col-md-6 col-lg-4">
+            <div class="col-12 col-sm-6 col-lg-4">
               <div class="team__card">
                 <div class="team__img"><img src="img/team/Alexander_foto.png" alt="Александр Горячев"></div>
                 <!-- /.team__img -->
@@ -438,58 +495,50 @@
   <section class="docs">
     <div class="container">
       <div class="row">
-        <div class="col-12 col-lg-9">
-          <div class="row">
-            <div class="col-12 col-lg-4">
-              <div class="docs__btn invis_el">
-                <span class="docs__btn-text"></span>
-              </div>
-              <!-- /.docs__btn -->
-              <div class="docs__btn invis_el">
-                <span class="docs__btn-text header__color">Документы</span>
-              </div>
-              <!-- /.docs__btn -->
-              
-              <div class="docs__btn">
-                <span class="docs__btn-text">ОГРН</span>
-              </div>
-              <!-- /.docs__btn -->
+        <div class="col-12 col-lg-9 mb-5">
+          <h2 class="header__color text-center">
+            Документы
+          </h2>
+          <!-- /.header__color -->
+        </div>
+        <!-- /.col-12 col-lg-9 -->
+      </div>
+      <!-- /.row -->
+      <div class="row">
+        <div class="col-12 col-lg-9 ">
+
+          <div class="docs__box d-flex flex-row flex-wrap justify-content-around">
+            <div class="docs__btn">
+              <a download="#" class="docs__btn-text">ОГРН</a>
             </div>
-            <!-- /.col-12 col-lg-4 -->
-            <div class="col-12 col-lg-4">
-              <div class="docs__btn invis_el">
-                <span class="docs__btn-text header__color">Cайт</span>
-              </div>
-              <!-- /.docs__btn -->
-              <div class="docs__btn">
-                <span class="docs__btn-text">ОГРН</span>
-              </div>
-              <!-- /.docs__btn -->
-              
-              <div class="docs__btn">
-                <span class="docs__btn-text">ОГРН</span>
-              </div>
-              <!-- /.docs__btn -->
+            <!-- /.docs__btn -->
+            
+            <div class="docs__btn">
+              <a download="#" class="docs__btn-text">Минюст</a>
             </div>
-            <!-- /.col-12 col-lg-4 -->
-            <div class="col-12 col-lg-4">
-              <div class="docs__btn">
-                <span class="docs__btn-text">ОГРН</span>
-              </div>
-              <!-- /.docs__btn -->
-              <div class="docs__btn">
-                <span class="docs__btn-text">ОГРН</span>
-              </div>
-              <!-- /.docs__btn -->
-              
-              <div class="docs__btn">
-                <span class="docs__btn-text">ОГРН</span>
-              </div>
-              <!-- /.docs__btn -->
+            <!-- /.docs__btn -->
+  
+            <div class="docs__btn">
+              <a download="#" class="docs__btn-text">Устав</a>
             </div>
-            <!-- /.col-12 col-lg-4 -->
+            <!-- /.docs__btn -->
+            
+            <div class="docs__btn">
+              <a download="#" class="docs__btn-text">Программа</a>
+            </div>
+            <!-- /.docs__btn -->
+  
+            <div class="docs__btn">
+              <a download="#" class="docs__btn-text">Смета</a>
+            </div>
+            <!-- /.docs__btn -->
+            
+            <div class="docs__btn">
+              <a download="#" class="docs__btn-text">Баланс</a>
+            </div>
+            <!-- /.docs__btn -->
           </div>
-          <!-- /.row -->
+          <!-- /.docs__box -->
         </div>
         <!-- /.col-12 col-lg-9 -->
       </div>
@@ -498,6 +547,6 @@
     <!-- /.container -->
   </section>
   <!-- /.docs -->
-  <script src="main.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>

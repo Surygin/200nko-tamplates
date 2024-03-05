@@ -2,19 +2,23 @@
     padding-top: 60px
     padding-bottom: 120px
     background: url(../img/docs/docs_bg.jpg) center no-repeat
+    background-size: cover
     &__btn 
-        margin-bottom: 30px
+        margin: 30px
+        padding: 30px
         display: flex
         justify-content: center
         align-items: center
-        height: 97px
-        width: 257px
-        font-size: 28px
+        width: 230px
+        font-size: clamp(1rem, 0.955rem + 0.23vw, 1.125rem)
         font-weight: 700
         text-align: center
         background-color: $bg__sup
         border-radius: 20px
         border: 2px solid $white
+        cursor: pointer
+        a 
+            color: $font__color
     .invis_el
         border-color: transparent
         background-color: transparent
