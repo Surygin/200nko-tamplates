@@ -1,0 +1,420 @@
+body {
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  background-color: rgba(0, 11, 63, 0.1);
+  color: #303749;
+}
+body img {
+  width: 100%;
+}
+body ul {
+  padding: 0;
+}
+body ol {
+  padding: 0;
+}
+body a {
+  text-decoration: none;
+}
+body section {
+  font-size: clamp(1rem, 0.955rem + 0.23vw, 1.125rem);
+}
+body section h2 {
+  font-size: clamp(1.25rem, 0.977rem + 1.36vw, 2rem);
+}
+body section p {
+  font-size: clamp(1rem, 0.955rem + 0.23vw, 1.125rem);
+}
+
+.breadcrumbs {
+  font-size: clamp(0.75rem, 0.705rem + 0.23vw, 0.875rem);
+}
+
+.mb-section {
+  margin-bottom: 65px;
+}
+
+.header__color {
+  color: #F34B00;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Oswald", sans-serif;
+  font-weight: 500;
+}
+
+.container {
+  max-width: 1276px;
+}
+
+.h2 {
+  font-size: 28px;
+}
+
+.invisible__object {
+  outline: none;
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
+.btn__help {
+  position: fixed;
+  margin-right: -100vw;
+  top: 20px;
+  right: 20px;
+  background-color: #F34B00;
+  color: #ffffff;
+  transition: all 0.2s ease-in-out;
+  z-index: 2;
+}
+
+.main {
+  position: relative;
+  border-radius: 20px;
+  background-color: #EEEFF3;
+  background-size: cover;
+}
+.main__text {
+  padding: clamp(1.875rem, 0.511rem + 6.82vw, 5.625rem) clamp(0.938rem, 0.597rem + 1.7vw, 1.875rem);
+}
+.main__title {
+  margin-bottom: 36px;
+  color: #F34B00;
+  font-weight: 500;
+}
+.main__title h1 {
+  font-size: clamp(1.5rem, 0.955rem + 2.73vw, 3rem);
+}
+.main__subtitle {
+  max-width: 588px;
+  font-family: "Oswald", sans-serif;
+  color: #303749;
+  font-size: clamp(0.875rem, 0.83rem + 0.23vw, 1rem);
+  font-weight: 500;
+}
+.main__logo {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  max-width: 300px;
+  padding: 20px;
+  background-color: #EEEFF3;
+  border-radius: 20px;
+}
+.main__logo img {
+  max-width: 120px;
+  height: 100px;
+  object-position: center;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.main__logo-box img {
+  max-width: 120px;
+  object-position: center;
+  object-fit: contain;
+}
+.main__form {
+  position: sticky;
+  max-width: 300px;
+  top: 20px;
+  padding: 25px 35px;
+  border: 2px solid #ffffff;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.15);
+  z-index: 1;
+}
+.main__form-title {
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+.main__form input, .main__form button, .main__form a {
+  margin-bottom: 15px;
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  font-size: 14px;
+  transition: all 0.2s ease-in-out;
+}
+.main__form input:hover, .main__form button:hover, .main__form a:hover {
+  transform: scale(1.05);
+}
+.main__form-btn {
+  background-color: #303749;
+  color: #ffffff;
+}
+.main__form-link {
+  display: inline-block;
+  text-align: center;
+  background-color: #F34B00;
+  text-decoration: none;
+  color: #ffffff;
+}
+.main__form-link:hover {
+  color: #ffffff;
+}
+.main__form-info {
+  margin-bottom: 25px;
+  display: block;
+  line-height: 120%;
+  font-size: 12px;
+  font-weight: 500;
+}
+.main__form-qr img {
+  display: block;
+  max-width: 160px;
+  margin: 0 auto;
+}
+.main__img img {
+  border-radius: 20px;
+}
+
+.sidebar {
+  position: fixed;
+  top: 20px;
+  transition: all 0.5s ease-in-out;
+}
+
+.submenu ul {
+  list-style: none;
+  css-reset: css-counter 0;
+}
+.submenu li {
+  padding: 25px 35px;
+  background-color: #EEEFF3;
+  border-radius: 20px;
+  font-size: clamp(0.875rem, 0.739rem + 0.68vw, 1.25rem);
+  counter-increment: css-counter 1;
+}
+.submenu li::before {
+  content: "/0" counter(css-counter);
+  margin-right: 20px;
+  font-weight: 700;
+  color: #F34B00;
+}
+
+.about {
+  padding: 95px 0;
+  background: #EEEFF3 url(../img/about/about.jpg) center no-repeat;
+  border-top: 2px solid rgba(242, 169, 0, 0.75);
+  border-bottom: 2px solid rgba(242, 169, 0, 0.75);
+}
+.about__title {
+  margin-bottom: 45px;
+}
+
+.notbg__body {
+  padding: clamp(1.25rem, 0.795rem + 2.27vw, 2.5rem);
+  background-color: #EEEFF3;
+  border-radius: 20px;
+}
+.notbg__title {
+  margin-bottom: 30px;
+}
+.notbg__subtitle {
+  font-size: 18px;
+  font-weight: 500;
+}
+.notbg img {
+  margin-bottom: 30px;
+  border-radius: 20px;
+}
+.notbg ul {
+  margin: 20px 0;
+  padding-left: 40px;
+}
+
+.whitebg__body {
+  position: relative;
+  padding: clamp(1.25rem, 0.795rem + 2.27vw, 2.5rem);
+  border-radius: 20px;
+  width: 100wv;
+  background-color: #ffffff;
+  z-index: 1;
+}
+.whitebg__body::before {
+  position: absolute;
+  top: 0;
+  margin-left: calc(20px - 100vw);
+  padding: 40px;
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100vw;
+  border-radius: 20px;
+  background-color: #fff;
+  z-index: -1;
+}
+
+.social__box {
+  padding: 20px;
+  border-radius: 20px;
+  background: #EEEFF3 url(../img/social/bg-social.jpg) center no-repeat;
+  background-size: cover;
+}
+.social__img {
+  margin: 20px;
+}
+.social a {
+  transition: all 0.2s ease-in-out;
+}
+
+.team__title {
+  margin-bottom: 42px;
+}
+.team__card {
+  margin-bottom: 45px;
+  border-bottom: 2px solid #ffffff;
+  margin: 0 auto;
+  max-width: 300px;
+  margin-bottom: 30px;
+}
+.team__img img {
+  margin-bottom: 24px;
+  border-radius: 20px;
+  max-width: 300px;
+  height: 280px;
+  object-fit: cover;
+  object-position: center;
+  transition: all 0.2s ease-in-out;
+}
+.team__name {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+.team__position {
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  font-size: 12px;
+}
+
+.reqv {
+  position: relative;
+  padding: 100px 0;
+  border-top: 2px solid rgba(242, 169, 0, 0.75);
+  border-bottom: 2px solid rgba(242, 169, 0, 0.75);
+  z-index: 0;
+}
+.reqv__img img {
+  position: absolute;
+  bottom: 0;
+  left: 10vw;
+  height: 100%;
+  width: auto;
+}
+.reqv__body {
+  position: relative;
+  padding: 25px 35px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  z-index: 1;
+}
+.reqv__title {
+  margin-bottom: 30px;
+  font-family: "Oswald", sans-serif;
+  font-size: 28px;
+  font-weight: 500;
+}
+.reqv__path {
+  position: relative;
+}
+.reqv__path img {
+  position: absolute;
+  left: -50%;
+  margin-top: -25%;
+  z-index: 0;
+}
+
+.docs {
+  padding-top: 60px;
+  padding-bottom: 120px;
+  background: url(../img/docs/docs_bg.jpg) center no-repeat;
+  background-size: cover;
+}
+.docs__btn {
+  margin: 30px;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 230px;
+  font-size: clamp(1rem, 0.955rem + 0.23vw, 1.125rem);
+  font-weight: 700;
+  text-align: center;
+  background-color: #EEEFF3;
+  border-radius: 20px;
+  border: 2px solid #ffffff;
+  cursor: pointer;
+}
+.docs__btn a {
+  color: #303749;
+}
+.docs .invis_el {
+  border-color: transparent;
+  background-color: transparent;
+}
+
+@media (hover: hover) {
+  .social a:hover {
+    transform: scale(1.1);
+  }
+  .team__img img:hover {
+    filter: grayscale(0);
+  }
+}
+@media screen and (min-width: 992px) {
+  .team__img img {
+    filter: grayscale(1);
+  }
+}
+@media screen and (max-width: 991px) {
+  .sidebar {
+    position: relative;
+  }
+  .main__form {
+    position: fixed;
+    margin-left: -120vw;
+    max-width: 100vw;
+    width: 100vw;
+    height: 100vh;
+    background-color: #EEEFF3;
+    top: 0;
+    left: 0;
+    border-radius: 0;
+    transition: all 0.2s ease-in-out;
+    z-index: 3;
+  }
+  .main__form-close {
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    cursor: pointer;
+  }
+  .main__form form {
+    width: 300px;
+    margin: 0 auto;
+    padding: 25px 35px;
+    border: 2px solid #ffffff;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.15);
+    z-index: 1;
+  }
+  .fade__in {
+    margin: 0;
+  }
+  .fade__out {
+    margin-left: -120vw;
+  }
+}
+@media screen and (max-width: 576px) {
+  .team__card {
+    width: 300px;
+    margin: 0 auto;
+  }
+}/*# sourceMappingURL=main.css.map */

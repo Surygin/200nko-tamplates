@@ -1,0 +1,94 @@
+.main
+    position: relative
+    // padding: 90px 30px
+    border-radius: 20px
+    background-color: $bg__sup
+    // background: #fff url(../img/main/main-bg.jpg) center no-repeat
+    background-size: cover
+    &__text
+        padding: clamp(1.875rem, 0.511rem + 6.82vw, 5.625rem) clamp(0.938rem, 0.597rem + 1.7vw, 1.875rem)
+    &__title
+        margin-bottom: 36px
+        color: $nko__color
+        font-weight: 500
+        h1 
+            font-size: clamp(1.5rem, 0.955rem + 2.73vw, 3rem)
+    &__subtitle
+        max-width: 588px
+        font-family: "Oswald", sans-serif
+        color: $font__color
+        font-size: clamp(0.875rem, 0.83rem + 0.23vw, 1rem)
+        font-weight: 500
+    &__logo
+        display: flex
+        justify-content: space-around
+        align-items: center
+        margin: 0 auto 
+        margin-bottom: 30px
+        max-width: 300px
+        padding: 20px
+        background-color: $bg__sup
+        border-radius: 20px
+        img 
+            max-width: 120px
+            height: 100px
+            object-position: center
+            object-fit: cover
+            border-radius: 10px
+        &-box
+            img 
+                max-width: 120px
+                object-position: center
+                object-fit: contain
+    &__form
+        position: sticky
+        max-width: 300px
+        top: 20px
+        padding: 25px 35px
+        border: 2px solid $white
+        border-radius: 20px
+        background-color: rgba(#fff, 15%)
+        z-index: 1
+        &-title 
+            margin-bottom: 15px
+            font-size: 20px
+        input, button, a 
+            margin-bottom: 15px
+            width: 100%
+            padding: 10px
+            border-radius: 10px
+            border: none
+            font-size: 14px
+            transition: all .2s ease-in-out
+            &:hover 
+                transform: scale(1.05)
+        &-btn
+            background-color: $font__color
+            color: $white
+        &-link 
+            display: inline-block
+            text-align: center
+            background-color: $nko__color
+            text-decoration: none
+            color: $white
+            &:hover 
+                color: $white
+        &-info 
+            margin-bottom: 25px
+            display: block
+            line-height: 120%
+            font-size: 12px
+            font-weight: 500
+        &-qr 
+            img 
+                display: block
+                max-width: 160px
+                margin: 0 auto
+    &__img 
+        img 
+            border-radius: 20px
+            
+.sidebar
+    position: fixed
+    top: 20px
+    transition: all .5s ease-in-out
