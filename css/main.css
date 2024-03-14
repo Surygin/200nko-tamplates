@@ -27,6 +27,10 @@ body section p {
   font-size: clamp(1rem, 0.955rem + 0.23vw, 1.125rem);
 }
 
+.show {
+  margin-left: 0 !important;
+}
+
 .breadcrumbs {
   font-size: clamp(0.75rem, 0.705rem + 0.23vw, 0.875rem);
 }
@@ -70,6 +74,12 @@ h1, h2, h3, h4, h5, h6 {
   color: #ffffff;
   transition: all 0.2s ease-in-out;
   z-index: 2;
+}
+
+.container img {
+  max-height: 500px;
+  object-fit: cover;
+  object-position: center;
 }
 
 .main {
@@ -179,6 +189,7 @@ h1, h2, h3, h4, h5, h6 {
   position: fixed;
   top: 20px;
   transition: all 0.5s ease-in-out;
+  z-index: 1;
 }
 
 .submenu ul {
@@ -358,6 +369,64 @@ h1, h2, h3, h4, h5, h6 {
 .docs .invis_el {
   border-color: transparent;
   background-color: transparent;
+}
+
+.modalVal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #EEEFF3;
+}
+
+#modalVal {
+  margin-left: -100vw;
+  z-index: 3;
+}
+#modalVal form {
+  position: relative;
+  margin: 0 auto;
+  margin-top: 5vh;
+  padding: 20px;
+  max-width: 300px;
+  border: 2px solid #ffffff;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.15);
+}
+#modalVal input, #modalVal button, #modalVal a {
+  margin-bottom: 15px;
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  font-size: 14px;
+  transition: all 0.2s ease-in-out;
+}
+#modalVal #modalValClose {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.thanks {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: -100vw;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #EEEFF3;
+  transition: all 0.2s ease-in-out;
+}
+.thanks #thanksClose {
+  position: absolute;
+  right: 10vw;
+  top: 30px;
+  cursor: pointer;
 }
 
 @media (hover: hover) {

@@ -83,7 +83,7 @@
                 <h2 class="text-center main__form-title header__color"><span class="d-block">Сделать</span> пожертвование</h2>
                 <input type="text" name="sum" class="main__form-input" placeholder="Сумма">
                 <button class="main__form-btn">Пожертвовать</button>
-                <a href="#" class="main__form-link">Помочь как волонтёр</a>
+                <a href="#" class="main__form-link" id="valBtn">Помочь как волонтёр</a>
                 <!-- /.main__form-link -->
                 <!-- /.main__form-btn -->
                 <span class="text-center main__form-info">
@@ -560,6 +560,35 @@
     <!-- /.container -->
   </section>
   <!-- /.docs -->
+  <section class="modalVal" id="modalVal">
+    <div class="modalVal__form">
+      <form action="#" method="post">
+        <span class="main__form-close" id="modalValClose">
+          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+            <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/>
+          </svg>
+        </span>
+        <h2 class="text-center main__form-title header__color"><span class="d-block">Помочь</span>как волонтер</h2>
+        <input type="text" name="name" class="main__form-input" placeholder="Имя">
+        <input type="text" name="phone" class="main__form-input mask" placeholder="Телефон">
+        <input type="text" name="email" class="main__form-input" placeholder="Email">
+        <button class="main__form-link">Помочь</button>
+        <!-- /.main__form-link -->
+        <!-- /.main__form-btn -->
+      </form>
+    </div>
+    <!-- /.main__form -->
+  </section>
+  <!-- /.modalVal -->
+  <section class="thanks" id="thanks">
+    <span id="thanksClose">
+      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+        <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/>
+      </svg>
+    </span>
+    <h3>Спасибо что НЕ остались равнодушны!</h3>
+  </section>
+  <!-- /.thanks -->
   <footer id="footer">
     <p class="m-5">
       Footer

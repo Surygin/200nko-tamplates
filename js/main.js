@@ -3,6 +3,11 @@ const mainForm = document.getElementById("mainForm");
 const btnHelp = document.getElementById("btnHelp");
 const notbgBody = document.getElementsByClassName("notbg__body");
 const cssmenu = document.getElementById("cssmenu");
+const valBtn = document.getElementById("valBtn");
+const modalVal = document.getElementById("modalVal");
+const modalValClose = document.getElementById("modalValClose");
+const thanksClose = document.getElementById("thanksClose");
+const thanks = document.getElementById("thanks");
 
 function changeZindexFornotbgBody(zIndex){
     for (const section of notbgBody) {
@@ -96,4 +101,20 @@ const cssmenuObserver = new IntersectionObserver(
 
 cssmenuObserver.observe(cssmenu);
 
-console.log("i am groot!")
+valBtn.addEventListener("click", ()=>{
+    modalVal.classList.add("show");
+});
+
+modalValClose.addEventListener("click", ()=>{
+    modalVal.classList.remove("show");
+})
+
+document.addEventListener('keydown', event=>{
+    if(event.code === 'Escape' && modalVal.classList.contains("show")){
+        modalVal.classList.remove("show");
+    }
+});
+
+thanksClose.addEventListener("click", ()=>{
+    thanks.classList.remove("show");
+})
