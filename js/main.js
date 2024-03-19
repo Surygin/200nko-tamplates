@@ -79,6 +79,12 @@ const footerObserver = new IntersectionObserver(
 
 footerObserver.observe(footerSection);
 
+window.addEventListener("load", ()=>{
+    for (const el of sidebar) {
+        el.style.top = cssmenu.offsetHeight + 20 + "px";
+    }
+});
+
 const cssmenuObserver = new IntersectionObserver(
     (entries) => {
         // console.log(entries);
@@ -106,7 +112,13 @@ valBtn.addEventListener("click", ()=>{
 });
 
 modalValClose.addEventListener("click", ()=>{
-    modalVal.classList.remove("show");
+    if(mainForm.classList.contains("fade__in")){
+        modalVal.classList.remove("show");
+        cssmenu.style.zIndex = 1;
+    } else {
+        modalVal.classList.remove("show");
+        cssmenu.style.zIndex = 9;
+    }
 })
 
 document.addEventListener('keydown', event=>{
