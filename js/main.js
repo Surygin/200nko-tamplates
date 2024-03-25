@@ -109,12 +109,12 @@ cssmenuObserver.observe(cssmenu);
 
 valBtn.addEventListener("click", ()=>{
     modalVal.classList.add("show");
+    cssmenu.style.zIndex = 1;
 });
 
 modalValClose.addEventListener("click", ()=>{
     if(mainForm.classList.contains("fade__in")){
         modalVal.classList.remove("show");
-        cssmenu.style.zIndex = 1;
     } else {
         modalVal.classList.remove("show");
         cssmenu.style.zIndex = 9;

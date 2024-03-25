@@ -89,7 +89,7 @@ h1, h2, h3, h4, h5, h6 {
   background-size: cover;
 }
 .main__text {
-  padding: clamp(1.875rem, 0.511rem + 6.82vw, 5.625rem) clamp(0.938rem, 0.597rem + 1.7vw, 1.875rem);
+  padding: clamp(1.25rem, 0.886rem + 1.82vw, 2.25rem) clamp(0.938rem, 0.597rem + 1.7vw, 1.875rem);
 }
 .main__title {
   margin-bottom: 36px;
